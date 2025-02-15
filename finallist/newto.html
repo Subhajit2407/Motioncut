@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewTo </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-content">
+            <a href="./newto.html" class="nav-logo">NewTo</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="list">My List</a>
+                <a href="#" class="nav-link" data-page="achievements">Achievements</a>
+                <a href="#" class="nav-link" data-page="profile">Profile</a>
+                <button class="start-new-btn" onclick="startNewProfile()
+                
+                
+                
+                ">Start New</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Your Personal Journey</span>
+            <h1>Turn Dreams into Reality</h1>
+            <p class="slogan">Track, achieve, and celebrate your life goals—one milestone at a time</p>
+            <div class="hero-buttons">
+                <button class="cta-button" onclick="openAddModal()">Add New Goal</button>
+                <button class="secondary-button" data-page="achievements">View Achievements</button>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="progress-percentage">0%</span>
+                    <span class="stat-label">Complete</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="total-goals">0</span>
+                    <span class="stat-label">Total Goals</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="completed-goals">0</span>
+                    <span class="stat-label">Achieved</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="bucket-list" id="bucket-list"></div>
+    </main>
+
+    <div class="modal" id="add-modal">
+        <div class="modal-content">
+            <h2>Add New Goal</h2>
+            <div class="modal-form">
+                <div class="form-group">
+                    <label for="new-item">What would you like to achieve?</label>
+                    <input type="text" id="new-item" placeholder="Enter your goal">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="travel">Travel</option>
+                        <option value="career">Career</option>
+                        <option value="personal">Personal</option>
+                        <option value="health">Health</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn-cancel" onclick="closeAddModal()">Cancel</button>
+                <button class="btn-add" onclick="addItem()">Add Goal</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NewTo</h3>
+                <p>Making dreams achievable, one step at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NewTo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="achievements.js"></script>
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+    <script src="profileData.js"></script>
+</body>
+</html>
