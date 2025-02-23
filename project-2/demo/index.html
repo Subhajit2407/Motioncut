@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxeGlobe</title>
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="./image/logo.png" alt="RoamEra Logo" class="logo">
+            
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">LuxeGlobe</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+
+    <div class="slider-container" id="home">
+        <div class="main-slider">
+            <div class="slider-content">
+                <h1 class="title">Explore the<br>Italian Alps<br>Adventure</h1>
+                <div class="navigation">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <div class="slide-counter">
+                        <span class="current">01</span>
+                        <span class="separator">/</span>
+                        <span class="total">05</span>
+                    </div>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div class="thumbnail active" data-index="0">
+                    <img src="./image/2.jpg" alt="Italian Alps 1">
+                    <span class="thumb-title">Thailand</span>
+                </div>
+                <div class="thumbnail" data-index="1">
+                    <img src="./image/3.jpg" alt="Singapore">
+                    <span class="thumb-title">Singapore</span>
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="./image/1.jpg" alt="Poland">
+                    <span class="thumb-title">Poland</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="./image/3.jpg" alt="Lake Como">
+                <h3>Singapore</h3>
+                <p>Experience the beauty of Singapore's most famous Cityscape.</p>
+            </div>
+            <div class="destination-card">
+                <img src="./image/2.jpg" alt="Dolomites">
+                <h3>Thailand </h3>
+                <p>Crystal-clear waters, lush greenery, and untouched beauty await.</p>
+            </div>
+            <div class="destination-card">
+                <img src="./image/1.jpg" alt="Lake Braies">
+                <h3>Poland</h3>
+                <p>European city square.</p>
+            </div>
+            <div class="destination-card">
+                <img src="./image/4.jpeg" alt="Lake Braies">
+                <h3>Bora Bora</h3>
+                <p>Escape to the paradise of Bora Bora</p>
+            </div>
+            <div class="destination-card">
+                <img src="./image/5.jpeg" alt="Lake Braies">
+                <h3>Bali</h3>
+                <p>a hidden oasis in the heart of Bali.</p>
+            </div>
+            <div class="destination-card">
+                <img src="./image/6.jpeg" alt="Lake Braies">
+                <h3>Paris</h3>
+                <p>Step into the timeless charm of Place des Vosges, the oldest planned square in Paris.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates about LuxeGlobe destinations and special offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
