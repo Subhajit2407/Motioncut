@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopHub - Trendy Shoes Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./e-com.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-container">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <button class="menu-btn">
+           <a href="./home.html"><img src="./image/shoe logo.png" width="75" height="50" viewBox="0 0 24 24"></a>
+          </button>
+          <h2>All-Star</h2>
+        </div>
+      
+        <nav>
+          <a href="./home.html">Home</a>
+          <a href="#" class="active">Shop</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        
+        <div class="cart-container">
+          <span class="cart-total">Rs.20000.00</span>
+          <div class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="cart-count">3</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a href="#">Home</a>
+          <span>/</span>
+          <span>Product</span>
+        </div>
+
+        <!-- Shop header -->
+        <div class="shop-header">
+          <h2>Shop</h2>
+          <div class="shop-filters">
+            <span>Showing 1-12 of 36 results</span>
+            <select id="sort-options">
+              <option>Default sorting</option>
+              <option>Sort by price: low to high</option>
+              <option>Sort by price: high to low</option>
+              <option>Sort by popularity</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product grid -->
+        <div class="product-grid" id="product-grid">
+          <!-- Products will be added here by JavaScript -->
+        </div>
+      </main>
+
+      <!-- Side elements -->
+      <div class="side-element left">
+        <div class="side-text">Scroll to down</div>
+        <div class="side-line"></div>
+      </div>
+
+      
+
+      <!-- Footer dots -->
+      <div class="footer-dots">
+        <div class="dot"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./e-com.js"></script>
+</body>
+</html>
