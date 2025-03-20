@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptonews</title>
+    <link rel="stylesheet" href="cover.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">
+                    <i data-lucide="globe" class="icon"></i>
+                    <span></span>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-item">
+                        <span>All</span>
+                        <i data-lucide="chevron-down" class="icon-sm"></i>
+                    </div>
+                    <div class="nav-item">
+                        <span>News</span>
+                        <i data-lucide="chevron-down" class="icon-sm"></i>
+                    </div>
+                    <div class="nav-item">
+                        <span>Exclusives</span>
+                        <i data-lucide="chevron-down" class="icon-sm"></i>
+                    </div>
+                    <div class="nav-item">
+                        <span>Guides</span>
+                        <i data-lucide="chevron-down" class="icon-sm"></i>
+                    </div>
+                    <div class="nav-item">
+                        <span>Recommended</span>
+                        <i data-lucide="chevron-down" class="icon-sm"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <i data-lucide="search" class="icon-sm"></i>
+                    <input type="text" placeholder="Article name, tag, category...">
+                </div>
+                <button class="language-btn">
+                    <i data-lucide="globe" class="icon-sm"></i>
+                    <span>En</span>
+                    <i data-lucide="chevron-down" class="icon-sm"></i>
+                </button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="featured-article">
+                <div class="article-grid">
+                    <div class="article-content">
+                        <span class="badge">BEST OF THE WEEK</span>
+                        <h1>Top Analyst Unveils Ethereum Catalyst That Could Trigger Nearly 50% Surge</h1>
+                        <div class="article-meta">
+                            <span class="time">4 hours ago</span>
+                            <div class="trend">
+                                <i data-lucide="trending-up" class="icon-sm"></i>
+                                <span>+12.5%</span>
+                            </div>
+                        </div>
+                        <button class="read-btn">
+                            <span>Read article</span>
+                            <i data-lucide="chevron-right" class="icon-sm"></i>
+                        </button>
+                    </div>
+                    <div class="article-image">
+                        <img src="./image/ETH.png" alt="Glowing blue orb">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommended">
+                <div class="recommended-header">
+                    <h2>Recommended</h2>
+                    <button class="view-all">
+                        View all
+                        <i data-lucide="chevron-right" class="icon-sm"></i>
+                    </button>
+                </div>
+                <div class="recommended-articles" id="recommendedArticles">
+                    <!-- Articles will be populated by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="cover.js"></script>
+</body>
+</html>
