@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background animation layer -->
+  <div class="background-animation"></div>
+
+  <div class="app-container">
+    <header>
+      <h1>Suntera®</h1>
+      <p class="date" id="dateDisplay"></p>
+    </header>
+
+    <!-- Main character -->
+    <div class="character-container">
+      <div class="character-face" id="characterFace">
+        <div class="eyes" id="characterEyes">
+          <div class="eye left-eye"></div>
+          <div class="eye right-eye"></div>
+        </div>
+        <div class="mouth" id="characterMouth"></div>
+      </div>
+    </div>
+
+    <h2 class="question">What’s your mood like today?</h2>
+
+    <!-- Mood buttons -->
+    <div class="mood-buttons">
+      <button class="mood-btn" data-mood="anxiety">Anxiety</button>
+      <button class="mood-btn" data-mood="distracted">Distracted</button>
+      <button class="mood-btn" data-mood="joy">Joy</button>
+      <button class="mood-btn" data-mood="surprised">Surprised</button>
+      <button class="mood-btn" data-mood="stupid">Stupid</button>
+      <button class="mood-btn" data-mood="calm">Calm</button>
+    </div>
+
+    <!-- Mood history log -->
+    <div class="history">
+      <h3>Mood History</h3>
+      <ul id="moodHistoryList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
